@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="assets/pumpkin.icon.png">
+    <title>Calendario</title>
+</head>
+
+<body>
+    <h1>Calculadora días hábiles</h1>
+    <!-- Contenedor -->
+    <div class="container border border-dark border-3 rounded-2 w-50 p-5">
+        <div class="row my-3 justify-content-center">
+            <div class="row gap-3 p-3 bg-info bg-opacity-10 border border-dark border-3 rounded-2">
+                <input class="col-md form-control btn btn-outline-dark text-center font-monospace" type="text"
+                    placeholder="Día de la semana" id="day"/>
+                <input class="col-md form-control btn btn-outline-dark text-center font-monospace" type="text"
+                    placeholder="Mes" id="month"/>
+                <input class="col-md form-control btn btn-outline-dark text-center font-monospace" type="text"
+                    placeholder="Año" id="year"/>
+            </div>
+        </div>
+        <!-- Boton para calcular -->
+        <div class="row gap-2">
+            <button class="btn btn-dark font-monospace" type="submit" id="calculate">Calcular</button>
+        </div>
+        <!-- Resultado -->
+        <div class="col-md mt-3">
+            <input class="form-control text-center font-monospace" type="text" id="result" disabled>
+        </div>
+    </div>
+</body>
+
+<script src="./js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
+</html>
